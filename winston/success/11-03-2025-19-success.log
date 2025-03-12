@@ -1,0 +1,16 @@
+Tue Mar 11 2025 19:30:37 [SERVER-NAME] warn: [42m[1mUnhandled event type: checkout.session.expired[22m[49m
+Tue Mar 11 2025 19:30:37 [SERVER-NAME] info: 10.0.70.126 - POST /api/v1/stripe/webhook 200 - 8.281 ms
+Tue Mar 11 2025 19:34:55 [SERVER-NAME] warn: [42m[1mUnhandled event type: checkout.session.expired[22m[49m
+Tue Mar 11 2025 19:34:55 [SERVER-NAME] info: 10.0.70.126 - POST /api/v1/stripe/webhook 200 - 1.158 ms
+Tue Mar 11 2025 19:43:9 [SERVER-NAME] warn: [42m[1mUnhandled event type: transfer.created[22m[49m
+Tue Mar 11 2025 19:43:9 [SERVER-NAME] info: 10.0.70.126 - POST /api/v1/stripe/webhook 200 - 1.849 ms
+Tue Mar 11 2025 19:43:9 [SERVER-NAME] warn: [42m[1mUnhandled event type: payment.created[22m[49m
+Tue Mar 11 2025 19:43:9 [SERVER-NAME] info: 10.0.70.126 - POST /api/v1/stripe/webhook 200 - 1.753 ms
+Tue Mar 11 2025 19:43:11 [SERVER-NAME] warn: [42m[1mUnhandled event type: payout.created[22m[49m
+Tue Mar 11 2025 19:43:11 [SERVER-NAME] info: 10.0.70.126 - POST /api/v1/stripe/webhook 200 - 3.422 ms
+Tue Mar 11 2025 19:43:11 [SERVER-NAME] warn: [42m[1mUnhandled event type: payout.updated[22m[49m
+Tue Mar 11 2025 19:43:11 [SERVER-NAME] info: 10.0.70.126 - POST /api/v1/stripe/webhook 200 - 1.498 ms
+Tue Mar 11 2025 19:43:11 [SERVER-NAME] warn: [42m[1mUnhandled event type: payout.paid[22m[49m
+Tue Mar 11 2025 19:43:11 [SERVER-NAME] info: 10.0.70.126 - POST /api/v1/stripe/webhook 200 - 1.105 ms
+Tue Mar 11 2025 19:44:10 [SERVER-NAME] warn: [42m[1mUnhandled event type: balance.available[22m[49m
+Tue Mar 11 2025 19:44:10 [SERVER-NAME] info: 10.0.70.126 - POST /api/v1/stripe/webhook 200 - 1.518 ms

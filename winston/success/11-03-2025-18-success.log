@@ -1,0 +1,33 @@
+Tue Mar 11 2025 18:0:12 [SERVER-NAME] info: [32m🚀 Database connected successfully[39m
+Tue Mar 11 2025 18:0:14 [SERVER-NAME] info: [33m♻️  Application listening on http://10.0.70.126:6007[39m
+Tue Mar 11 2025 18:0:17 [SERVER-NAME] info: [32m🚀 Database connected successfully[39m
+Tue Mar 11 2025 18:0:20 [SERVER-NAME] info: [33m♻️  Application listening on http://10.0.70.126:6007[39m
+Tue Mar 11 2025 18:0:21 [SERVER-NAME] info: [32m🚀 Database connected successfully[39m
+Tue Mar 11 2025 18:0:24 [SERVER-NAME] info: [33m♻️  Application listening on http://10.0.70.126:6007[39m
+Tue Mar 11 2025 18:0:29 [SERVER-NAME] info: [32m🚀 Database connected successfully[39m
+Tue Mar 11 2025 18:0:32 [SERVER-NAME] info: [33m♻️  Application listening on http://10.0.70.126:6007[39m
+Tue Mar 11 2025 18:0:53 [SERVER-NAME] info: [32m🚀 Database connected successfully[39m
+Tue Mar 11 2025 18:0:57 [SERVER-NAME] info: [32m🚀 Database connected successfully[39m
+Tue Mar 11 2025 18:0:59 [SERVER-NAME] info: [33m♻️  Application listening on http://10.0.70.126:6007[39m
+Tue Mar 11 2025 18:1:10 [SERVER-NAME] info: [32m🚀 Database connected successfully[39m
+Tue Mar 11 2025 18:1:12 [SERVER-NAME] info: [33m♻️  Application listening on http://10.0.70.126:6007[39m
+Tue Mar 11 2025 18:1:15 [SERVER-NAME] info: [32m🚀 Database connected successfully[39m
+Tue Mar 11 2025 18:1:17 [SERVER-NAME] info: [33m♻️  Application listening on http://10.0.70.126:6007[39m
+Tue Mar 11 2025 18:43:14 [SERVER-NAME] info: [32m🚀 Database connected successfully[39m
+Tue Mar 11 2025 18:43:17 [SERVER-NAME] info: [33m♻️  Application listening on http://10.0.70.126:6007[39m
+Tue Mar 11 2025 18:43:18 [SERVER-NAME] info: 10.0.70.126 - GET /api/v1/admin/dashboard/overview?year=2025 200 - 773.336 ms
+Tue Mar 11 2025 18:45:21 [SERVER-NAME] info: [32m🚀 Database connected successfully[39m
+Tue Mar 11 2025 18:45:24 [SERVER-NAME] info: [33m♻️  Application listening on http://10.0.70.126:6007[39m
+Tue Mar 11 2025 18:45:25 [SERVER-NAME] info: 10.0.70.126 - GET /api/v1/admin/dashboard/overview?year=2025 200 - 1169.734 ms
+Tue Mar 11 2025 18:45:49 [SERVER-NAME] info: [32m🚀 Database connected successfully[39m
+Tue Mar 11 2025 18:45:52 [SERVER-NAME] info: [33m♻️  Application listening on http://10.0.70.126:6007[39m
+Tue Mar 11 2025 18:46:6 [SERVER-NAME] info: [32m🚀 Database connected successfully[39m
+Tue Mar 11 2025 18:46:8 [SERVER-NAME] info: [33m♻️  Application listening on http://10.0.70.126:6007[39m
+Tue Mar 11 2025 18:46:9 [SERVER-NAME] info: 10.0.70.126 - GET /api/v1/admin/dashboard/overview?year=2025 200 - 817.567 ms
+Tue Mar 11 2025 18:47:1 [SERVER-NAME] info: [32m🚀 Database connected successfully[39m
+Tue Mar 11 2025 18:47:3 [SERVER-NAME] info: [32m🚀 Database connected successfully[39m
+Tue Mar 11 2025 18:47:6 [SERVER-NAME] info: [33m♻️  Application listening on http://10.0.70.126:6007[39m
+Tue Mar 11 2025 18:47:7 [SERVER-NAME] info: 10.0.70.126 - GET /api/v1/admin/dashboard/overview?year=2025 200 - 873.366 ms
+Tue Mar 11 2025 18:47:38 [SERVER-NAME] info: [32m🚀 Database connected successfully[39m
+Tue Mar 11 2025 18:47:41 [SERVER-NAME] info: [33m♻️  Application listening on http://10.0.70.126:6007[39m
+Tue Mar 11 2025 18:47:42 [SERVER-NAME] info: 10.0.70.126 - GET /api/v1/admin/dashboard/overview?year=2025 200 - 976.376 ms
