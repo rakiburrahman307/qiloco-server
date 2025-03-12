@@ -1,5 +1,5 @@
 import admin from 'firebase-admin';
-import serviceAccount from "../../src/firebaseSDK.json";
+import serviceAccount from "../firebaseSDK.ts";
 import { logger } from '../shared/logger';
 
 // Cast serviceAccount to ServiceAccount type
