@@ -21,4 +21,14 @@ router.get(
   auth(USER_ROLES.ADMIN, USER_ROLES.SUPER_ADMIN),
   AdminDashboardController.earningOverview,
 );
+router.get(
+  '/dashboard/products',
+  auth(USER_ROLES.ADMIN, USER_ROLES.SUPER_ADMIN),
+  AdminDashboardController.resentSellingProduct,
+);
+router.get(
+  '/dashboard/products/:id',
+  auth(USER_ROLES.ADMIN, USER_ROLES.SUPER_ADMIN),
+  AdminDashboardController.getSellingProduct,
+);
 export const AdminDashboardRoute = router;

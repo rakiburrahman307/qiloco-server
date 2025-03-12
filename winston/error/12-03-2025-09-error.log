@@ -1,0 +1,2 @@
+Wed Mar 12 2025 9:12:42 [SERVER-NAME] error: [31m🤢 Failed to connect Database[39m
+Wed Mar 12 2025 9:53:43 [SERVER-NAME] error: 10.0.70.126 - POST /api/v1/orders/create-chaekout-session 403 - 272.344 ms

@@ -4,27 +4,11 @@ import AppError from '../../../errors/AppError';
 import { Order } from './order.model';
 import { Product } from '../products/product.model';
 import { User } from '../user/user.model';
+import QueryBuilder from '../../builder/QueryBuilder';
+import generateOrderNumber from '../../../utils/genarateOrderNumber';
+import { OrderStatus } from './order.interface';
 
-const createPaymentIntent = async (amount: number, email: string) => {
-  const paymentIntent = await stripe.paymentIntents.create({
-    amount: Number(amount),
-    currency: 'usd',
-    receipt_email: email,
-  });
-  return paymentIntent.client_secret;
-};
-
-const createOrder = async (payload: any) => {
-  const result = await Order.create(payload);
-  if (!result) {
-    throw new AppError(
-      StatusCodes.INTERNAL_SERVER_ERROR,
-      'Failed to create order',
-    );
-  }
-  return result;
-};
-
+// create cheakout session
 const createCheckoutSession = async (
   productId: string,
   userId: string,
@@ -59,7 +43,7 @@ const createCheckoutSession = async (
       },
     ],
     shipping_address_collection: {
-      allowed_countries: ['US', 'CA', 'GB', 'BD'], // List allowed countries for shipping address (you can add others)
+      allowed_countries: ['US', 'CA', 'GB', 'BD'],
     },
     metadata: {
       productId: product.id,
@@ -69,7 +53,9 @@ const createCheckoutSession = async (
     },
   });
   const order = new Order({
-    userId,
+    customerId: userId,
+    userId: isExistProduct.userId,
+    orderNumber: generateOrderNumber(),
     productName: isExistProduct.name,
     quantity: quantity,
     price: isExistProduct.price,
@@ -91,26 +77,70 @@ const createCheckoutSession = async (
     paymentIntentId: checkoutSession.payment_intent,
   };
 };
+// get all the orders
+const getOrders = async (userId: string, query: Record<string, unknown>) => {
+  const queryBuilder = new QueryBuilder(
+    Order.find({ userId, paymentStatus: 'paid' }),
+    query,
+  );
+  const orders = await queryBuilder
+    .filter()
+    .sort()
+    .paginate()
+    .fields()
+    .modelQuery.exec();
 
-// Handle failed payment
-export const handlePaymentIntentFailed = async (event: any) => {
-  const paymentIntent = event.data.object;
-  const orderId = paymentIntent.metadata.orderId;
+  const pagination = await queryBuilder.countTotal();
+  return { orders, pagination };
+};
+const getOrderById = async (id: string) => {
+  const order = await Order.findById(id);
+  if (!order) {
+    throw new AppError(StatusCodes.NOT_FOUND, 'Order not found');
+  }
+  return order;
+};
+// update the order status
+const updateOrderStatus = async (id: string, payload: OrderStatus) => {
+  const order = await Order.findById(id).select('deliveryStatus');
+  if (!order) {
+    throw new AppError(StatusCodes.NOT_FOUND, 'Order not found');
+  }
+  const currentStatus = order?.deliveryStatus;
 
-  //   // Find the order by orderId
-  //   const order = await Order.findById(orderId);
-  //   if (!order) {
-  //     throw new AppError(404, 'Order not found');
-  //   }
+  if (currentStatus === 'canceled') {
+    throw new AppError(
+      StatusCodes.BAD_REQUEST,
+      'Order is canceled. No more status changes are allowed',
+    );
+  }
 
-  //   // Update the order status to 'failed'
-  //   order.status = 'failed';
-  //   await order.save();
+  if (currentStatus === 'delivered') {
+    throw new AppError(
+      StatusCodes.BAD_REQUEST,
+      'Cannot update status. Order is already delivered',
+    );
+  }
 
-  console.log(`Payment for Order ID ${orderId} failed`);
+  if (currentStatus === 'pending' && payload !== 'proseccing') {
+    throw new AppError(
+      StatusCodes.BAD_REQUEST,
+      'Order can only be moved from pending to proseccing',
+    );
+  }
+  if (currentStatus === 'proseccing' && payload !== 'delivered') {
+    throw new AppError(
+      StatusCodes.BAD_REQUEST,
+      'Order can only be moved from proseccing to delivered',
+    );
+  }
+  order.deliveryStatus = payload;
+  await order.save();
+  return order;
 };
 export const OrderServcies = {
-  createPaymentIntent,
-  createOrder,
   createCheckoutSession,
+  getOrders,
+  getOrderById,
+  updateOrderStatus,
 };

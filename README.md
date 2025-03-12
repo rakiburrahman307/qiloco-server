@@ -1,8 +1,4 @@
-# Student ID 2393 => variant 2 => SET-2
-
-# Bike Shop Management API
-
-## Welcome! 👋
+  ## Welcome! 👋
 
 Thanks for exploring the **Bike Shop Management API**. This project is a feature-rich backend service for managing bikes, orders, and inventory in a bike shop.
 

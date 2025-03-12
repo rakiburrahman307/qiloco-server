@@ -1,0 +1,7 @@
+Wed Mar 12 2025 10:30:1 [SERVER-NAME] error: 10.0.70.126 - POST /api/v1/auth/login 400 - 510.628 ms
+Wed Mar 12 2025 10:30:9 [SERVER-NAME] error: 10.0.70.126 - POST /api/v1/auth/login 400 - 502.408 ms
+Wed Mar 12 2025 10:42:17 [SERVER-NAME] error: 10.0.70.126 - GET /api/v1/orders/ 404 - 2.926 ms
+Wed Mar 12 2025 10:42:35 [SERVER-NAME] error: 10.0.70.126 - GET /api/v1/orders/ 401 - 5.906 ms
+Wed Mar 12 2025 10:58:14 [SERVER-NAME] error: 10.0.70.126 - GET /api/v1/orders/67d10de4edcd6e47e2e8d325 401 - 6.555 ms
+Wed Mar 12 2025 10:58:23 [SERVER-NAME] error: 10.0.70.126 - GET /api/v1/orders/67d10de4edcd6e47e2e8d325 401 - 1.109 ms
+Wed Mar 12 2025 10:58:53 [SERVER-NAME] error: 10.0.70.126 - GET /api/v1/orders/67d10de4edcd6e47e2e8d325 401 - 0.894 ms

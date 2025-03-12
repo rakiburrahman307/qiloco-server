@@ -38,7 +38,7 @@ const productSelingOverview = catchAsync(async (req, res) => {
     data: result,
   });
 });
-// Product Seling Overview
+// Earning Overview
 const earningOverview = catchAsync(async (req, res) => {
   const { year } = req.query;
   if (!year) {
@@ -51,7 +51,7 @@ const earningOverview = catchAsync(async (req, res) => {
 
   // Convert the year to a number
   const yearInt = parseInt(year as string);
-  const result = await AdminDashboardService.productOverview(yearInt);
+  const result = await AdminDashboardService.earningOverviewChart(yearInt);
   sendResponse(res, {
     success: true,
     statusCode: StatusCodes.OK,
@@ -59,8 +59,31 @@ const earningOverview = catchAsync(async (req, res) => {
     data: result,
   });
 });
+
+const resentSellingProduct = catchAsync(async (req, res) => {
+  const query = req.query;
+  const result = await AdminDashboardService.resentSellingProduct(query);
+  sendResponse(res, {
+    success: true,
+    statusCode: StatusCodes.OK,
+    message: 'Resent seling product retrieved successfully',
+    data: result,
+  });
+});
+const getSellingProduct = catchAsync(async (req, res) => {
+  const { id } = req.params;
+  const result = await AdminDashboardService.getSingleResentProduct(id);
+  sendResponse(res, {
+    success: true,
+    statusCode: StatusCodes.OK,
+    message: 'Product retrieved successfully',
+    data: result,
+  });
+});
 export const AdminDashboardController = {
   totalAnalysis,
   productSelingOverview,
   earningOverview,
+  resentSellingProduct,
+  getSellingProduct,
 };
