@@ -11,21 +11,20 @@ class QueryBuilder<T> {
     this.query = query;
   }
 
+  // Search by matching against the searchable fields (case-insensitive)
   search(searchableFields: string[]) {
     const searchTerm = this.query?.searchTerm as string;
     if (searchTerm) {
       this.modelQuery = this.modelQuery.find({
-        $or: searchableFields.map(
-          (field) =>
-            ({
-              [field]: { $regex: searchTerm, $options: 'i' },
-            }) as FilterQuery<T>,
-        ),
+        $or: searchableFields.map((field) => ({
+          [field]: { $regex: searchTerm, $options: 'i' }, // Case-insensitive regex
+        })),
       });
     }
     return this;
   }
 
+  // Filter by other query parameters, excluding searchTerm, sort, limit, etc.
   filter() {
     const excludeFields = ['searchTerm', 'sort', 'limit', 'page', 'fields'];
     const queryObj = { ...this.query };
@@ -35,29 +34,47 @@ class QueryBuilder<T> {
     return this;
   }
 
-  sort() {
-    const sort =
-      (this.query?.sort as string)?.split(',')?.join(' ') || '-createdAt';
-    this.modelQuery = this.modelQuery.sort(sort as string);
+  // Handle filtering by moodTags with case-insensitive matching
+  filterByMoodTag(moodTags: string[]) {
+    if (moodTags && moodTags.length > 0) {
+      const regexArray = moodTags.map((tag) => new RegExp(tag, 'i')); // Case-insensitive
+      this.modelQuery = this.modelQuery.where('moodTag').in(regexArray);
+    }
     return this;
   }
 
+  // Sorting (by price, latest, popularity, etc.)
+  sort() {
+    const sort = this.query?.sort as string;
+    if (sort) {
+      const [field, direction] = sort.split(',');
+      const sortDirection = direction === 'desc' ? -1 : 1;
+      this.modelQuery = this.modelQuery.sort({ [field]: sortDirection });
+    } else {
+      this.modelQuery = this.modelQuery.sort({ createdAt: -1 });
+    }
+
+    return this;
+  }
+
+  // Pagination
   paginate(defaultLimit = 10) {
     const page = Number(this.query?.page) || 1;
     const limit = Number(this.query?.limit) || defaultLimit;
     const skip = (page - 1) * limit;
 
-    this.modelQuery = this.modelQuery.skip(skip).limit(limit).sort();
+    this.modelQuery = this.modelQuery.skip(skip).limit(limit);
     return this;
   }
 
+  // Field selection (for projections)
   fields() {
-    const fields =
-      (this.query?.fields as string)?.split(',')?.join(' ') || '-__v';
+    const fields = (this.query?.fields as string)?.split(',')?.join(' ') || '-__v';
     this.modelQuery = this.modelQuery.select(fields);
     return this;
   }
 
+  // Count the total number of documents matching the query (for pagination)
   async countTotal() {
     try {
       const totalQueries = this.modelQuery.getFilter();

@@ -23,7 +23,7 @@ const getAllProducts = async (id: string, query: Record<string, unknown>) => {
     .modelQuery;
 
   if (!products || products.length === 0) {
-    throw new AppError(StatusCodes.NOT_FOUND, 'Meals not found for this shop');
+    throw new AppError(StatusCodes.NOT_FOUND, 'Product not found');
   }
   const meta = await queryBuilder.countTotal();
   return { products, meta };
@@ -31,13 +31,14 @@ const getAllProducts = async (id: string, query: Record<string, unknown>) => {
 // get all product for users
 const getAllProductsUser = async (query: Record<string, unknown>) => {
   const queryBuilder = new QueryBuilder(Product.find({}), query);
-
+  if (query.moodTag) {
+    const moodTags = Array.isArray(query.moodTag)
+      ? query.moodTag
+      : (query.moodTag as string).split(',');
+    queryBuilder.filterByMoodTag(moodTags);
+  }
   const products = await queryBuilder.filter().sort().paginate().fields()
     .modelQuery;
-
-  if (!products || products.length === 0) {
-    throw new AppError(StatusCodes.NOT_FOUND, 'Meals not found for this shop');
-  }
   const meta = await queryBuilder.countTotal();
   return { products, meta };
 };

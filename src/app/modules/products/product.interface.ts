@@ -2,7 +2,7 @@ import mongoose, { Document } from 'mongoose';
 export interface IReview {
   userId: mongoose.Schema.Types.ObjectId;
   rating: number;
-  reviewText: string;
+  comment: string;
   date: Date;
 }
 

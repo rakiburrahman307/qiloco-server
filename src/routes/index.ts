@@ -9,6 +9,7 @@ import { AdminDashboardRoute } from '../app/modules/admin/dashboard/dashboard.ro
 import { AdminEarningRoute } from '../app/modules/admin/earning/earning.route';
 import { VendorDashboardRoute } from '../app/modules/vendor/vendors/dashboard/dashboard.route';
 import { VendorEarningRoute } from '../app/modules/vendor/vendors/earning/earning.route';
+import { ReviewRoutes } from '../app/modules/review/review.routes';
 
 const router = express.Router();
 const routes = [
@@ -51,6 +52,10 @@ const routes = [
   {
     path: '/vendor',
     route: VendorEarningRoute,
+  },
+  {
+    path: '/reviews',
+    route: ReviewRoutes,
   },
 ];
 

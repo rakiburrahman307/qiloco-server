@@ -1,52 +1,111 @@
-import mongoose from "mongoose";
-import { IReview } from "./review.interface";
-import { Review } from "./review.model";
-import { StatusCodes } from "http-status-codes";
-import { User } from "../user/user.model";
-import ApiError from "../../../errors/ApiErrors";
+import { StatusCodes } from 'http-status-codes';
+import { IReview } from '../products/product.interface';
+import { Product } from '../products/product.model';
+import AppError from '../../../errors/AppError';
+import { ObjectId } from 'mongoose';
 
-const createReviewToDB = async(payload:IReview): Promise<IReview>=>{
-
-
-    // Fetch baber and check if it exists in one query
-    const user:any = await User.findById(payload.barber);
-    if (!user) {
-        throw new ApiError(StatusCodes.NOT_FOUND, "No User Found");
-    }
-
-    if (payload.rating) {
-
-        // checking the rating is valid or not;
-        const rating = Number(payload.rating);
-        if (rating < 1 || rating > 5) {
-            throw new ApiError(StatusCodes.BAD_REQUEST, "Invalid rating value");
-        }
-
-        // Update service's rating and total ratings count
-        const ratingCount = user.ratingCount + 1;
-
-        let newRating;
-        if (user.rating === null || user.rating === 0) {
-            // If no previous ratings, the new rating is the first one
-            newRating = rating;
-        } else {
-            // Calculate the new rating based on previous ratings
-            newRating = ((user.rating * user.ratingCount) + rating) / ratingCount;
-        }
-
-        await User.findByIdAndUpdate(
-            {_id: payload.barber}, 
-            {rating: parseFloat(newRating.toFixed(2)) , ratingCount: ratingCount  }, 
-            {new: true}
-        )
-    }
-
-    const result = await Review.create(payload);
-    if(!result){
-        throw new ApiError(StatusCodes.BAD_REQUEST, "Failed To create Review")
-    }
-    return payload;
+// Helper function to find product
+const findProductById = async (productId: string) => {
+  const product = await Product.findById(productId);
+  if (!product) {
+    throw new AppError(StatusCodes.NOT_FOUND, 'Product not found');
+  }
+  return product;
 };
 
+// Create a review
+const createReviewToDB = async (
+  payload: IReview,
+  userId: ObjectId,
+  productId: string,
+) => {
+  const { rating, comment } = payload;
 
-export const ReviewService ={ createReviewToDB}
+  const product = await findProductById(productId);
+
+  // Check if the user has already reviewed the product
+  const existingReview = product.reviews.find(
+    (review) => review.userId.toString() === userId.toString(),
+  );
+
+  if (existingReview) {
+    throw new AppError(
+      StatusCodes.BAD_REQUEST,
+      'You have already reviewed this product',
+    );
+  }
+
+  const newReview = {
+    userId,
+    rating,
+    comment,
+    date: new Date(),
+  };
+
+  product.reviews.push(newReview);
+  await product.save();
+
+  return newReview;
+};
+
+// Update a review
+// Update a review
+const updateReviewInDB = async (
+  payload: IReview,
+  userId: ObjectId,
+  productId: string,
+) => {
+  const { rating, comment } = payload;
+
+  const product = await findProductById(productId);
+
+  // Find the review to update
+  const reviewIndex = product.reviews.findIndex(
+    (review) => review.userId.toString() === userId.toString(),
+  );
+
+  if (reviewIndex === -1) {
+    throw new AppError(StatusCodes.NOT_FOUND, 'Review not found');
+  }
+
+  // Update the review
+  const updatedReview = {
+    ...product.reviews[reviewIndex],
+    rating,
+    comment,
+    userId: userId,
+    date: new Date(),
+  };
+
+  product.reviews[reviewIndex] = updatedReview;
+  await product.save();
+
+  return updatedReview;
+};
+
+// Delete a review
+const deleteReviewFromDB = async (userId: string, productId: string) => {
+  const product = await findProductById(productId);
+
+  // Find the review to delete
+  const reviewIndex = product.reviews.findIndex(
+    (review) => review.userId.toString() === userId,
+  );
+
+  if (reviewIndex === -1) {
+    throw new AppError(StatusCodes.NOT_FOUND, 'Review not found');
+  }
+
+  // Remove the review from the array
+  product.reviews.splice(reviewIndex, 1);
+
+  await product.save();
+
+  return { message: 'Review deleted successfully' };
+};
+
+export const ReviewService = {
+  createReviewToDB,
+  updateReviewInDB,
+  deleteReviewFromDB,
+};

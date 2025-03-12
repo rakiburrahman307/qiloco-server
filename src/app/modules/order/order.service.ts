@@ -14,23 +14,31 @@ const createCheckoutSession = async (
   userId: string,
   quantity: number,
 ) => {
+  // Check if user exists
   const isUserExist = await User.findById(userId);
   if (!isUserExist) {
-    throw new Error('User not found');
+    throw new AppError(StatusCodes.NOT_FOUND, 'User not found');
   }
+  // Check if product exists
   const isExistProduct = await Product.findById(productId);
   if (!isExistProduct) {
-    throw new Error('product not found');
+    throw new AppError(StatusCodes.NOT_FOUND, 'Product not found');
   }
-
+  // Check if requested quantity is available
+  if (isExistProduct.quantity < quantity) {
+    throw new AppError(StatusCodes.BAD_REQUEST, 'Out of stock');
+  }
+  // Create product on Stripe
   const product = await stripe.products.create({
     name: isExistProduct.name,
   });
+  // Create price for the product
   const price = await stripe.prices.create({
     product: product.id,
     unit_amount: isExistProduct.price * 100,
     currency: 'usd',
   });
+  // Create the checkout session
   const checkoutSession = await stripe.checkout.sessions.create({
     payment_method_types: ['card'],
     mode: 'payment',
@@ -52,6 +60,8 @@ const createCheckoutSession = async (
       enabled: true,
     },
   });
+
+  // Create an order in the system
   const order = new Order({
     customerId: userId,
     userId: isExistProduct.userId,
@@ -70,13 +80,15 @@ const createCheckoutSession = async (
     paymentIntentId: '',
   });
 
-  await order.save(); // Sa
+  // Save the order
+  await order.save();
 
+  // Return the URL for the checkout session
   return {
     url: checkoutSession.url,
-    paymentIntentId: checkoutSession.payment_intent,
   };
 };
+
 // get all the orders
 const getOrders = async (userId: string, query: Record<string, unknown>) => {
   const queryBuilder = new QueryBuilder(
