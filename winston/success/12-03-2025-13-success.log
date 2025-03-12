@@ -52,3 +52,4 @@ Wed Mar 12 2025 13:8:6 [SERVER-NAME] info: [33m♻️  Application listening on
 Wed Mar 12 2025 13:8:17 [SERVER-NAME] info: [32m🚀 Database connected successfully[39m
 Wed Mar 12 2025 13:8:20 [SERVER-NAME] info: [32m🚀 Database connected successfully[39m
 Wed Mar 12 2025 13:8:23 [SERVER-NAME] info: [33m♻️  Application listening on http://10.0.70.126:6007[39m
+Wed Mar 12 2025 13:8:42 [SERVER-NAME] info: 10.0.70.126 - GET /api/v1/admin/earning/67d10de4edcd6e47e2e8d325 200 - 272.655 ms

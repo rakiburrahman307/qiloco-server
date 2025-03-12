@@ -1,0 +1,26 @@
+Wed Mar 12 2025 18:40:7 [SERVER-NAME] info: 10.0.70.126 - POST /api/v1/auth/login 200 - 550.025 ms
+Wed Mar 12 2025 18:40:24 [SERVER-NAME] info: [32m🚀 Database connected successfully[39m
+Wed Mar 12 2025 18:40:27 [SERVER-NAME] info: [32m🚀 Database connected successfully[39m
+Wed Mar 12 2025 18:40:31 [SERVER-NAME] info: [32m🚀 Database connected successfully[39m
+Wed Mar 12 2025 18:40:34 [SERVER-NAME] info: [33m♻️  Application listening on http://10.0.70.126:6007[39m
+Wed Mar 12 2025 18:40:42 [SERVER-NAME] info: [32m🚀 Database connected successfully[39m
+Wed Mar 12 2025 18:40:43 [SERVER-NAME] info: [32m🚀 Database connected successfully[39m
+Wed Mar 12 2025 18:41:21 [SERVER-NAME] info: [32m🚀 Database connected successfully[39m
+Wed Mar 12 2025 18:41:24 [SERVER-NAME] info: [33m♻️  Application listening on http://10.0.70.126:6007[39m
+Wed Mar 12 2025 18:42:56 [SERVER-NAME] info: 10.0.70.126 - GET /api/v1/vendor/dashboard/products 200 - 768.826 ms
+Wed Mar 12 2025 18:53:28 [SERVER-NAME] info: [32m🚀 Database connected successfully[39m
+Wed Mar 12 2025 18:53:30 [SERVER-NAME] info: [33m♻️  Application listening on http://10.0.70.126:6007[39m
+Wed Mar 12 2025 18:53:35 [SERVER-NAME] info: 10.0.70.126 - GET /api/v1/vendor/dashboard/products 200 - 758.211 ms
+Wed Mar 12 2025 18:55:5 [SERVER-NAME] info: [32m🚀 Database connected successfully[39m
+Wed Mar 12 2025 18:55:8 [SERVER-NAME] info: [33m♻️  Application listening on http://10.0.70.126:6007[39m
+Wed Mar 12 2025 18:55:19 [SERVER-NAME] info: [32m🚀 Database connected successfully[39m
+Wed Mar 12 2025 18:55:22 [SERVER-NAME] info: [33m♻️  Application listening on http://10.0.70.126:6007[39m
+Wed Mar 12 2025 18:55:29 [SERVER-NAME] info: [32m🚀 Database connected successfully[39m
+Wed Mar 12 2025 18:55:32 [SERVER-NAME] info: [33m♻️  Application listening on http://10.0.70.126:6007[39m
+Wed Mar 12 2025 18:55:36 [SERVER-NAME] info: [32m🚀 Database connected successfully[39m
+Wed Mar 12 2025 18:55:39 [SERVER-NAME] info: [33m♻️  Application listening on http://10.0.70.126:6007[39m
+Wed Mar 12 2025 18:56:15 [SERVER-NAME] info: 10.0.70.126 - GET /api/v1/vendor/dashboard/products 200 - 740.927 ms
+Wed Mar 12 2025 18:57:16 [SERVER-NAME] info: 10.0.70.126 - GET /api/v1/vendor/dashboard/products?deliveryStatus=pending 200 - 731.262 ms
+Wed Mar 12 2025 18:57:30 [SERVER-NAME] info: 10.0.70.126 - GET /api/v1/vendor/dashboard/products 200 - 727.778 ms
+Wed Mar 12 2025 18:57:55 [SERVER-NAME] info: 10.0.70.126 - GET /api/v1/vendor/dashboard 200 - 976.148 ms
+Wed Mar 12 2025 18:58:42 [SERVER-NAME] info: 10.0.70.126 - GET /api/v1/vendor/dashboard/products/67d10de4edcd6e47e2e8d325 200 - 519.563 ms

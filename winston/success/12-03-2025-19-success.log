@@ -1,0 +1,19 @@
+Wed Mar 12 2025 19:0:23 [SERVER-NAME] info: [32m🚀 Database connected successfully[39m
+Wed Mar 12 2025 19:0:27 [SERVER-NAME] info: [32m🚀 Database connected successfully[39m
+Wed Mar 12 2025 19:0:30 [SERVER-NAME] info: [33m♻️  Application listening on http://10.0.70.126:6007[39m
+Wed Mar 12 2025 19:0:42 [SERVER-NAME] info: [32m🚀 Database connected successfully[39m
+Wed Mar 12 2025 19:0:45 [SERVER-NAME] info: [33m♻️  Application listening on http://10.0.70.126:6007[39m
+Wed Mar 12 2025 19:0:53 [SERVER-NAME] info: [32m🚀 Database connected successfully[39m
+Wed Mar 12 2025 19:0:55 [SERVER-NAME] info: [33m♻️  Application listening on http://10.0.70.126:6007[39m
+Wed Mar 12 2025 19:0:57 [SERVER-NAME] info: [32m🚀 Database connected successfully[39m
+Wed Mar 12 2025 19:1:0 [SERVER-NAME] info: [33m♻️  Application listening on http://10.0.70.126:6007[39m
+Wed Mar 12 2025 19:1:22 [SERVER-NAME] info: 10.0.70.126 - GET /api/v1/vendor/earnings 200 - 526.704 ms
+Wed Mar 12 2025 19:1:45 [SERVER-NAME] info: [32m🚀 Database connected successfully[39m
+Wed Mar 12 2025 19:1:48 [SERVER-NAME] info: [33m♻️  Application listening on http://10.0.70.126:6007[39m
+Wed Mar 12 2025 19:1:52 [SERVER-NAME] info: [32m🚀 Database connected successfully[39m
+Wed Mar 12 2025 19:1:55 [SERVER-NAME] info: [33m♻️  Application listening on http://10.0.70.126:6007[39m
+Wed Mar 12 2025 19:2:15 [SERVER-NAME] info: 10.0.70.126 - GET /api/v1/vendor/earnings 200 - 507.141 ms
+Wed Mar 12 2025 19:2:27 [SERVER-NAME] info: 10.0.70.126 - GET /api/v1/vendor/earning/67d10e88edcd6e47e2e8d32c 200 - 249.233 ms
+Wed Mar 12 2025 19:3:49 [SERVER-NAME] info: 10.0.70.126 - GET /api/v1/product/related?type=Hybrid 200 - 254.928 ms
+Wed Mar 12 2025 19:4:58 [SERVER-NAME] info: [32m🚀 Database connected successfully[39m
+Wed Mar 12 2025 19:5:1 [SERVER-NAME] info: [33m♻️  Application listening on http://10.0.70.126:6007[39m

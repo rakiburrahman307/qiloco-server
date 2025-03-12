@@ -1,0 +1,44 @@
+Wed Mar 12 2025 16:22:4 [SERVER-NAME] warn: [42m[1mUnhandled event type: checkout.session.expired[22m[49m
+Wed Mar 12 2025 16:22:4 [SERVER-NAME] info: 10.0.70.126 - POST /api/v1/stripe/webhook 200 - 56.828 ms
+Wed Mar 12 2025 16:38:54 [SERVER-NAME] info: [32m🚀 Database connected successfully[39m
+Wed Mar 12 2025 16:39:9 [SERVER-NAME] info: [32m🚀 Database connected successfully[39m
+Wed Mar 12 2025 16:39:11 [SERVER-NAME] info: [32m🚀 Database connected successfully[39m
+Wed Mar 12 2025 16:39:14 [SERVER-NAME] info: [33m♻️  Application listening on http://10.0.70.126:6007[39m
+Wed Mar 12 2025 16:39:15 [SERVER-NAME] info: [32m🚀 Database connected successfully[39m
+Wed Mar 12 2025 16:39:18 [SERVER-NAME] info: [33m♻️  Application listening on http://10.0.70.126:6007[39m
+Wed Mar 12 2025 16:39:31 [SERVER-NAME] info: 10.0.70.126 - POST /api/v1/auth/login 200 - 502.385 ms
+Wed Mar 12 2025 16:39:40 [SERVER-NAME] info: 10.0.70.126 - GET /api/v1/vendor/dashboard/overview?year=2025 200 - 545.992 ms
+Wed Mar 12 2025 16:40:21 [SERVER-NAME] info: 10.0.70.126 - GET /api/v1/vendor/dashboard/overview?year=2025 200 - 533.757 ms
+Wed Mar 12 2025 16:40:44 [SERVER-NAME] info: [32m🚀 Database connected successfully[39m
+Wed Mar 12 2025 16:40:47 [SERVER-NAME] info: [33m♻️  Application listening on http://10.0.70.126:6007[39m
+Wed Mar 12 2025 16:40:48 [SERVER-NAME] info: 10.0.70.126 - GET /api/v1/vendor/dashboard/overview?year=2025 200 - 801.106 ms
+Wed Mar 12 2025 16:41:42 [SERVER-NAME] info: 10.0.70.126 - GET /api/v1/vendor/dashboard/overview?year=2025 200 - 506.274 ms
+Wed Mar 12 2025 16:41:56 [SERVER-NAME] info: [32m🚀 Database connected successfully[39m
+Wed Mar 12 2025 16:41:59 [SERVER-NAME] info: [33m♻️  Application listening on http://10.0.70.126:6007[39m
+Wed Mar 12 2025 16:42:0 [SERVER-NAME] info: 10.0.70.126 - GET /api/v1/vendor/dashboard/overview?year=2025 200 - 504.994 ms
+Wed Mar 12 2025 16:42:22 [SERVER-NAME] info: [32m🚀 Database connected successfully[39m
+Wed Mar 12 2025 16:42:25 [SERVER-NAME] info: [33m♻️  Application listening on http://10.0.70.126:6007[39m
+Wed Mar 12 2025 16:42:47 [SERVER-NAME] info: 10.0.70.126 - GET /api/v1/vendor/dashboard/overview?year=2025 200 - 488.287 ms
+Wed Mar 12 2025 16:46:15 [SERVER-NAME] info: [32m🚀 Database connected successfully[39m
+Wed Mar 12 2025 16:46:17 [SERVER-NAME] info: [33m♻️  Application listening on http://10.0.70.126:6007[39m
+Wed Mar 12 2025 16:46:24 [SERVER-NAME] info: [32m🚀 Database connected successfully[39m
+Wed Mar 12 2025 16:46:27 [SERVER-NAME] info: [33m♻️  Application listening on http://10.0.70.126:6007[39m
+Wed Mar 12 2025 16:46:39 [SERVER-NAME] info: [32m🚀 Database connected successfully[39m
+Wed Mar 12 2025 16:46:42 [SERVER-NAME] info: [33m♻️  Application listening on http://10.0.70.126:6007[39m
+Wed Mar 12 2025 16:46:45 [SERVER-NAME] info: [32m🚀 Database connected successfully[39m
+Wed Mar 12 2025 16:46:48 [SERVER-NAME] info: [33m♻️  Application listening on http://10.0.70.126:6007[39m
+Wed Mar 12 2025 16:48:0 [SERVER-NAME] info: [32m🚀 Database connected successfully[39m
+Wed Mar 12 2025 16:48:2 [SERVER-NAME] info: [33m♻️  Application listening on http://10.0.70.126:6007[39m
+Wed Mar 12 2025 16:48:8 [SERVER-NAME] info: [32m🚀 Database connected successfully[39m
+Wed Mar 12 2025 16:48:12 [SERVER-NAME] info: [33m♻️  Application listening on http://10.0.70.126:6007[39m
+Wed Mar 12 2025 16:48:23 [SERVER-NAME] info: [32m🚀 Database connected successfully[39m
+Wed Mar 12 2025 16:48:25 [SERVER-NAME] info: [33m♻️  Application listening on http://10.0.70.126:6007[39m
+Wed Mar 12 2025 16:48:57 [SERVER-NAME] info: [32m🚀 Database connected successfully[39m
+Wed Mar 12 2025 16:48:59 [SERVER-NAME] info: [33m♻️  Application listening on http://10.0.70.126:6007[39m
+Wed Mar 12 2025 16:49:2 [SERVER-NAME] info: [32m🚀 Database connected successfully[39m
+Wed Mar 12 2025 16:49:5 [SERVER-NAME] info: [32m🚀 Database connected successfully[39m
+Wed Mar 12 2025 16:49:8 [SERVER-NAME] info: [33m♻️  Application listening on http://10.0.70.126:6007[39m
+Wed Mar 12 2025 16:49:22 [SERVER-NAME] info: [32m🚀 Database connected successfully[39m
+Wed Mar 12 2025 16:49:25 [SERVER-NAME] info: [33m♻️  Application listening on http://10.0.70.126:6007[39m
+Wed Mar 12 2025 16:49:26 [SERVER-NAME] info: [32m🚀 Database connected successfully[39m
+Wed Mar 12 2025 16:49:29 [SERVER-NAME] info: [33m♻️  Application listening on http://10.0.70.126:6007[39m

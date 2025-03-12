@@ -1,0 +1,104 @@
+Wed Mar 12 2025 15:1:27 [SERVER-NAME] info: [32m🚀 Database connected successfully[39m
+Wed Mar 12 2025 15:1:33 [SERVER-NAME] info: [32m🚀 Database connected successfully[39m
+Wed Mar 12 2025 15:1:37 [SERVER-NAME] info: [32m🚀 Database connected successfully[39m
+Wed Mar 12 2025 15:1:40 [SERVER-NAME] info: [33m♻️  Application listening on http://10.0.70.126:6007[39m
+Wed Mar 12 2025 15:5:20 [SERVER-NAME] info: [32m🚀 Database connected successfully[39m
+Wed Mar 12 2025 15:5:23 [SERVER-NAME] info: [33m♻️  Application listening on http://10.0.70.126:6007[39m
+Wed Mar 12 2025 15:5:24 [SERVER-NAME] info: [32m🚀 Database connected successfully[39m
+Wed Mar 12 2025 15:5:27 [SERVER-NAME] info: [33m♻️  Application listening on http://10.0.70.126:6007[39m
+Wed Mar 12 2025 15:5:34 [SERVER-NAME] info: [32m🚀 Database connected successfully[39m
+Wed Mar 12 2025 15:5:37 [SERVER-NAME] info: [33m♻️  Application listening on http://10.0.70.126:6007[39m
+Wed Mar 12 2025 15:5:42 [SERVER-NAME] info: [32m🚀 Database connected successfully[39m
+Wed Mar 12 2025 15:5:44 [SERVER-NAME] info: [33m♻️  Application listening on http://10.0.70.126:6007[39m
+Wed Mar 12 2025 15:6:48 [SERVER-NAME] info: [32m🚀 Database connected successfully[39m
+Wed Mar 12 2025 15:6:51 [SERVER-NAME] info: [33m♻️  Application listening on http://10.0.70.126:6007[39m
+Wed Mar 12 2025 15:6:57 [SERVER-NAME] info: [32m🚀 Database connected successfully[39m
+Wed Mar 12 2025 15:7:0 [SERVER-NAME] info: [33m♻️  Application listening on http://10.0.70.126:6007[39m
+Wed Mar 12 2025 15:7:3 [SERVER-NAME] info: 10.0.70.126 - GET /api/v1/vendor/dashboard 200 - 1032.336 ms
+Wed Mar 12 2025 15:10:56 [SERVER-NAME] info: [32m🚀 Database connected successfully[39m
+Wed Mar 12 2025 15:10:59 [SERVER-NAME] info: [33m♻️  Application listening on http://10.0.70.126:6007[39m
+Wed Mar 12 2025 15:11:14 [SERVER-NAME] info: [32m🚀 Database connected successfully[39m
+Wed Mar 12 2025 15:11:17 [SERVER-NAME] info: [33m♻️  Application listening on http://10.0.70.126:6007[39m
+Wed Mar 12 2025 15:11:43 [SERVER-NAME] info: [32m🚀 Database connected successfully[39m
+Wed Mar 12 2025 15:11:46 [SERVER-NAME] info: [33m♻️  Application listening on http://10.0.70.126:6007[39m
+Wed Mar 12 2025 15:12:30 [SERVER-NAME] info: [32m🚀 Database connected successfully[39m
+Wed Mar 12 2025 15:12:33 [SERVER-NAME] info: [33m♻️  Application listening on http://10.0.70.126:6007[39m
+Wed Mar 12 2025 15:12:51 [SERVER-NAME] info: 10.0.70.126 - GET /api/v1/vendor/dashboard 200 - 1039.279 ms
+Wed Mar 12 2025 15:14:51 [SERVER-NAME] info: 10.0.70.126 - POST /api/v1/auth/login 200 - 484.909 ms
+Wed Mar 12 2025 15:14:56 [SERVER-NAME] info: 10.0.70.126 - GET /api/v1/vendor/dashboard 200 - 1010.039 ms
+Wed Mar 12 2025 15:15:22 [SERVER-NAME] info: [32m🚀 Database connected successfully[39m
+Wed Mar 12 2025 15:15:25 [SERVER-NAME] info: [33m♻️  Application listening on http://10.0.70.126:6007[39m
+Wed Mar 12 2025 15:15:26 [SERVER-NAME] info: [32m🚀 Database connected successfully[39m
+Wed Mar 12 2025 15:15:29 [SERVER-NAME] info: [33m♻️  Application listening on http://10.0.70.126:6007[39m
+Wed Mar 12 2025 15:15:32 [SERVER-NAME] info: 10.0.70.126 - GET /api/v1/vendor/dashboard 200 - 1088.231 ms
+Wed Mar 12 2025 15:18:2 [SERVER-NAME] info: [32m🚀 Database connected successfully[39m
+Wed Mar 12 2025 15:18:4 [SERVER-NAME] info: [32m🚀 Database connected successfully[39m
+Wed Mar 12 2025 15:18:7 [SERVER-NAME] info: [33m♻️  Application listening on http://10.0.70.126:6007[39m
+Wed Mar 12 2025 15:18:33 [SERVER-NAME] info: [32m🚀 Database connected successfully[39m
+Wed Mar 12 2025 15:18:35 [SERVER-NAME] info: [32m🚀 Database connected successfully[39m
+Wed Mar 12 2025 15:18:39 [SERVER-NAME] info: [32m🚀 Database connected successfully[39m
+Wed Mar 12 2025 15:18:42 [SERVER-NAME] info: [33m♻️  Application listening on http://10.0.70.126:6007[39m
+Wed Mar 12 2025 15:18:45 [SERVER-NAME] info: [32m🚀 Database connected successfully[39m
+Wed Mar 12 2025 15:18:48 [SERVER-NAME] info: [33m♻️  Application listening on http://10.0.70.126:6007[39m
+Wed Mar 12 2025 15:18:52 [SERVER-NAME] info: 10.0.70.126 - GET /api/v1/vendor/dashboard 200 - 1052.422 ms
+Wed Mar 12 2025 15:19:18 [SERVER-NAME] info: [32m🚀 Database connected successfully[39m
+Wed Mar 12 2025 15:19:21 [SERVER-NAME] info: [33m♻️  Application listening on http://10.0.70.126:6007[39m
+Wed Mar 12 2025 15:19:28 [SERVER-NAME] info: 10.0.70.126 - GET /api/v1/vendor/dashboard 200 - 1110.547 ms
+Wed Mar 12 2025 15:22:52 [SERVER-NAME] info: 10.0.70.126 - GET /api/v1/vendor/dashboard 200 - 1035.623 ms
+Wed Mar 12 2025 15:26:22 [SERVER-NAME] info: [32m🚀 Database connected successfully[39m
+Wed Mar 12 2025 15:26:26 [SERVER-NAME] info: [33m♻️  Application listening on http://10.0.70.126:6007[39m
+Wed Mar 12 2025 15:26:47 [SERVER-NAME] info: [32m🚀 Database connected successfully[39m
+Wed Mar 12 2025 15:26:48 [SERVER-NAME] info: [32m🚀 Database connected successfully[39m
+Wed Mar 12 2025 15:26:51 [SERVER-NAME] info: [33m♻️  Application listening on http://10.0.70.126:6007[39m
+Wed Mar 12 2025 15:26:52 [SERVER-NAME] info: [32m🚀 Database connected successfully[39m
+Wed Mar 12 2025 15:26:55 [SERVER-NAME] info: [32m🚀 Database connected successfully[39m
+Wed Mar 12 2025 15:26:56 [SERVER-NAME] info: [32m🚀 Database connected successfully[39m
+Wed Mar 12 2025 15:26:58 [SERVER-NAME] info: [32m🚀 Database connected successfully[39m
+Wed Mar 12 2025 15:26:59 [SERVER-NAME] info: [32m🚀 Database connected successfully[39m
+Wed Mar 12 2025 15:27:1 [SERVER-NAME] info: [32m🚀 Database connected successfully[39m
+Wed Mar 12 2025 15:27:3 [SERVER-NAME] info: [32m🚀 Database connected successfully[39m
+Wed Mar 12 2025 15:27:5 [SERVER-NAME] info: [33m♻️  Application listening on http://10.0.70.126:6007[39m
+Wed Mar 12 2025 15:27:10 [SERVER-NAME] info: 10.0.70.126 - GET /api/v1/vendor/dashboard 200 - 1079.997 ms
+Wed Mar 12 2025 15:28:22 [SERVER-NAME] info: [32m🚀 Database connected successfully[39m
+Wed Mar 12 2025 15:28:25 [SERVER-NAME] info: [33m♻️  Application listening on http://10.0.70.126:6007[39m
+Wed Mar 12 2025 15:28:26 [SERVER-NAME] info: [32m🚀 Database connected successfully[39m
+Wed Mar 12 2025 15:28:29 [SERVER-NAME] info: [33m♻️  Application listening on http://10.0.70.126:6007[39m
+Wed Mar 12 2025 15:28:31 [SERVER-NAME] info: 10.0.70.126 - GET /api/v1/vendor/dashboard 200 - 1547.059 ms
+Wed Mar 12 2025 15:28:58 [SERVER-NAME] info: [32m🚀 Database connected successfully[39m
+Wed Mar 12 2025 15:29:0 [SERVER-NAME] info: [32m🚀 Database connected successfully[39m
+Wed Mar 12 2025 15:29:2 [SERVER-NAME] info: [32m🚀 Database connected successfully[39m
+Wed Mar 12 2025 15:29:5 [SERVER-NAME] info: [32m🚀 Database connected successfully[39m
+Wed Mar 12 2025 15:29:7 [SERVER-NAME] info: [33m♻️  Application listening on http://10.0.70.126:6007[39m
+Wed Mar 12 2025 15:36:26 [SERVER-NAME] info: [32m🚀 Database connected successfully[39m
+Wed Mar 12 2025 15:36:29 [SERVER-NAME] info: [33m♻️  Application listening on http://10.0.70.126:6007[39m
+Wed Mar 12 2025 15:36:36 [SERVER-NAME] info: [32m🚀 Database connected successfully[39m
+Wed Mar 12 2025 15:36:39 [SERVER-NAME] info: [33m♻️  Application listening on http://10.0.70.126:6007[39m
+Wed Mar 12 2025 15:36:44 [SERVER-NAME] info: [32m🚀 Database connected successfully[39m
+Wed Mar 12 2025 15:36:53 [SERVER-NAME] info: [32m🚀 Database connected successfully[39m
+Wed Mar 12 2025 15:36:55 [SERVER-NAME] info: [33m♻️  Application listening on http://10.0.70.126:6007[39m
+Wed Mar 12 2025 15:42:50 [SERVER-NAME] info: [32m🚀 Database connected successfully[39m
+Wed Mar 12 2025 15:42:54 [SERVER-NAME] info: [33m♻️  Application listening on http://10.0.70.126:6007[39m
+Wed Mar 12 2025 15:43:3 [SERVER-NAME] info: [32m🚀 Database connected successfully[39m
+Wed Mar 12 2025 15:43:6 [SERVER-NAME] info: [33m♻️  Application listening on http://10.0.70.126:6007[39m
+Wed Mar 12 2025 15:43:18 [SERVER-NAME] info: [32m🚀 Database connected successfully[39m
+Wed Mar 12 2025 15:43:21 [SERVER-NAME] info: [33m♻️  Application listening on http://10.0.70.126:6007[39m
+Wed Mar 12 2025 15:44:9 [SERVER-NAME] info: [32m🚀 Database connected successfully[39m
+Wed Mar 12 2025 15:44:12 [SERVER-NAME] info: [33m♻️  Application listening on http://10.0.70.126:6007[39m
+Wed Mar 12 2025 15:44:26 [SERVER-NAME] info: 10.0.70.126 - GET /api/v1/vendor/dashboard/overview?year=2025 200 - 548.566 ms
+Wed Mar 12 2025 15:45:19 [SERVER-NAME] info: [32m🚀 Database connected successfully[39m
+Wed Mar 12 2025 15:45:22 [SERVER-NAME] info: [32m🚀 Database connected successfully[39m
+Wed Mar 12 2025 15:45:25 [SERVER-NAME] info: [32m🚀 Database connected successfully[39m
+Wed Mar 12 2025 15:45:26 [SERVER-NAME] info: [32m🚀 Database connected successfully[39m
+Wed Mar 12 2025 15:45:30 [SERVER-NAME] info: [32m🚀 Database connected successfully[39m
+Wed Mar 12 2025 15:45:31 [SERVER-NAME] info: [32m🚀 Database connected successfully[39m
+Wed Mar 12 2025 15:45:48 [SERVER-NAME] info: [32m🚀 Database connected successfully[39m
+Wed Mar 12 2025 15:45:51 [SERVER-NAME] info: [33m♻️  Application listening on http://10.0.70.126:6007[39m
+Wed Mar 12 2025 15:45:52 [SERVER-NAME] info: [32m🚀 Database connected successfully[39m
+Wed Mar 12 2025 15:45:55 [SERVER-NAME] info: [33m♻️  Application listening on http://10.0.70.126:6007[39m
+Wed Mar 12 2025 15:45:56 [SERVER-NAME] info: 10.0.70.126 - GET /api/v1/vendor/dashboard/overview?year=2025 200 - 1158.787 ms
+Wed Mar 12 2025 15:59:22 [SERVER-NAME] info: 10.0.70.126 - POST /api/v1/auth/login 200 - 530.113 ms
+Wed Mar 12 2025 15:59:26 [SERVER-NAME] warn: [42m[1mUnhandled event type: product.created[22m[49m
+Wed Mar 12 2025 15:59:26 [SERVER-NAME] info: 10.0.70.126 - POST /api/v1/stripe/webhook 200 - 3.495 ms
+Wed Mar 12 2025 15:59:26 [SERVER-NAME] warn: [42m[1mUnhandled event type: price.created[22m[49m
+Wed Mar 12 2025 15:59:26 [SERVER-NAME] info: 10.0.70.126 - POST /api/v1/stripe/webhook 200 - 1.292 ms
+Wed Mar 12 2025 15:59:27 [SERVER-NAME] info: 10.0.70.126 - POST /api/v1/orders/create-chaekout-session 200 - 2579.287 ms

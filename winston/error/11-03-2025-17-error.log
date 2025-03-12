@@ -1,5 +1,0 @@
-Tue Mar 11 2025 17:7:33 [SERVER-NAME] error: 10.0.70.126 - GET /api/v1/admin/dashboard/2025 500 - 549.900 ms
-Tue Mar 11 2025 17:8:34 [SERVER-NAME] error: 10.0.70.126 - GET /api/v1/admin/dashboard/2025 500 - 1034.437 ms
-Tue Mar 11 2025 17:9:30 [SERVER-NAME] error: 10.0.70.126 - GET /api/v1/admin/dashboard/2025 500 - 517.384 ms
-Tue Mar 11 2025 17:10:22 [SERVER-NAME] error: 10.0.70.126 - GET /api/v1/admin/dashboard/2025 500 - 506.795 ms
-Tue Mar 11 2025 17:18:23 [SERVER-NAME] error: 10.0.70.126 - GET /api/v1/admin/dashboard/year=2025 400 - 262.705 ms

@@ -5,4 +5,4 @@ const router = express.Router();
 router.get('/earnings', EarningController.getEarnings);
 router.get('/earning/:id', EarningController.getEarning);
 
-export const AdminEarningRoute = router;
+export const VendorEarningRoute = router;

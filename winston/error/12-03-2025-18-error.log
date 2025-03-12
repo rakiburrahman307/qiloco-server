@@ -1,0 +1,2 @@
+Wed Mar 12 2025 18:40:0 [SERVER-NAME] error: 10.0.70.126 - GET /api/v1/vendor/dashboard/products 403 - 387.947 ms
+Wed Mar 12 2025 18:58:19 [SERVER-NAME] error: 10.0.70.126 - GET /api/v1/admin/dashboard/products/67d10de4edcd6e47e2e8d325 403 - 244.606 ms

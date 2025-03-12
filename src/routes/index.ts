@@ -6,7 +6,9 @@ import { ProductRoutes } from '../app/modules/products/products.route';
 import SettingsRouter from '../app/modules/sattings/sattings.route';
 import { OrderRoutes } from '../app/modules/order/order.route';
 import { AdminDashboardRoute } from '../app/modules/admin/dashboard/dashboard.route';
-import { EarningRoute } from '../app/modules/admin/earning/earning.route';
+import { AdminEarningRoute } from '../app/modules/admin/earning/earning.route';
+import { VendorDashboardRoute } from '../app/modules/vendor/vendors/dashboard/dashboard.route';
+import { VendorEarningRoute } from '../app/modules/vendor/vendors/earning/earning.route';
 
 const router = express.Router();
 const routes = [
@@ -40,7 +42,15 @@ const routes = [
   },
   {
     path: '/admin',
-    route: EarningRoute,
+    route: AdminEarningRoute,
+  },
+  {
+    path: '/vendor',
+    route: VendorDashboardRoute,
+  },
+  {
+    path: '/vendor',
+    route: VendorEarningRoute,
   },
 ];
 
